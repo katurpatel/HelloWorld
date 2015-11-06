@@ -99,8 +99,8 @@
     <target depends="init" name="build-project">
         <echo message="${ant.project.name}: ${ant.file}"/>
         <javac debug="true" debuglevel="${debuglevel}" destdir="WebContent/WEB-INF/classes" includeantruntime="false" source="${source}" target="${target}">
-            <src path="src"/>
-            <src path=".apt_generated"/>
+            <src path=""/>
+            <src path=""/>
             <classpath refid="HelloWorld.classpath"/>
         </javac>
     </target>
