@@ -3,7 +3,7 @@
               Any modifications will be overwritten.
               To include a user specific buildfile here, simply create one in the same
               directory with the processing instruction <?eclipse.ant.import?>
-              as the first entry and export the buildfile again. --><project basedir="." default="build" name="HelloWorld">
+              as the first entry and export the buildfile again. --><project basedir="." default="war" name="HelloWorld">
     <property environment="env"/>
     <property name="ECLIPSE_HOME" value="../../../../EclipseMars/eclipse/"/>
     <property name="debuglevel" value="source,lines,vars"/>
@@ -120,17 +120,15 @@
         <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
         <antcall target="build"/>
     </target>
-              <target name="war" description="Bundles the application as a WAR file" depends="clean, build">
-              	     
-              	    <copy includeemptydirs="false" todir="WebContent/WEB-INF/classes">
-              	            <fileset dir="build/classes">
-              	            <include name="**/*.class"/>
-              	            </fileset>
-              	    </copy>
-              	     
-              	    <war destfile="HelloWorld.war"
-              	        basedir="WebContent"
-              	        needxmlfile="false">
-              	    </war>
-              	</target>
+    <target name="war" description="Bundles the application as a WAR file" depends="clean, build"> 
+    	<copy includeemptydirs="false" todir="WebContent/WEB-INF/classes">
+        	<fileset dir="build/classes">
+            	<include name="**/*.class"/>
+            </fileset>
+            </copy> 
+            <war destfile="HelloWorld.war"
+            	basedir="WebContent"
+              	needxmlfile="false">
+            </war>
+    </target>
 </project>
