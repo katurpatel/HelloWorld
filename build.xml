@@ -79,13 +79,15 @@
     </path>
     <target name="init">
         <mkdir dir="WebContent/WEB-INF/classes"/>
+    	<mkdir dir="src"/>
+    	<mkdir dir=".apt_generated"/>
         <copy includeemptydirs="false" todir="WebContent/WEB-INF/classes">
-        	<fileset dir="">
+        	<fileset dir="src">
         		<exclude name="**/*.java"/>
         	</fileset>
         </copy>
         <copy includeemptydirs="false" todir="WebContent/WEB-INF/classes">
-            <fileset dir="">
+            <fileset dir=".apt_generated">
                 <exclude name="**/*.java"/>
             </fileset>
         </copy>
@@ -99,8 +101,8 @@
     <target depends="init" name="build-project">
         <echo message="${ant.project.name}: ${ant.file}"/>
         <javac debug="true" debuglevel="${debuglevel}" destdir="WebContent/WEB-INF/classes" includeantruntime="false" source="${source}" target="${target}">
-            <src path=""/>
-            <src path=""/>
+            <src path="src"/>
+            <src path=".apt_generated"/>
             <classpath refid="HelloWorld.classpath"/>
         </javac>
     </target>
