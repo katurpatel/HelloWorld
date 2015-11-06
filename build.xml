@@ -85,7 +85,7 @@
         	</fileset>
         </copy>
         <copy includeemptydirs="false" todir="WebContent/WEB-INF/classes">
-            <fileset dir=".apt_generated">
+            <fileset dir="">
                 <exclude name="**/*.java"/>
             </fileset>
         </copy>
