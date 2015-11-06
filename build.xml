@@ -80,9 +80,6 @@
     <target name="init">
         <mkdir dir="WebContent/WEB-INF/classes"/>
         <copy includeemptydirs="false" todir="WebContent/WEB-INF/classes">
-            <fileset dir="src">
-                <exclude name="**/*.java"/>
-            </fileset>
         </copy>
         <copy includeemptydirs="false" todir="WebContent/WEB-INF/classes">
             <fileset dir=".apt_generated">
