@@ -7,6 +7,6 @@
 </head>
 <body>
 <h1>Hello World! Today is Great!</h1>
-<h2>This is version 3!</h2>
+<h2>This is version 3.</h2>
 </body>
 </html>
