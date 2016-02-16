@@ -8,6 +8,6 @@
 <body>
 <h1>Hello World!</h1>
 <h2>This is an integration test.</h2>
-<h4>This is version 21</h4>
+<h4>This is version 22</h4>
 </body>
 </html>
