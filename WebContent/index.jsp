@@ -7,7 +7,7 @@
 </head>
 <body>
 <h1>Hello World!</h1>
-<h2>This is an integration test.</h2>
-<h4>This is version 22</h4>
+<h2>This is an integration test. This is for Tufts HP</h2>
+<h4>This is version 23</h4>
 </body>
 </html>
