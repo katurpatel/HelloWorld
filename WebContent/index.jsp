@@ -7,7 +7,7 @@
 </head>
 <body>
 <h1>Hello World!</h1>
-<h2>This is an integration test.</h2>
-<h4>This is version 25</h4>
+<h2>This is an integration test. Testing 123</h2>
+<h4>This is version 26</h4>
 </body>
 </html>
