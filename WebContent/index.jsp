@@ -8,6 +8,6 @@
 <body>
 <h1>Hello World!</h1>
 <h2>This is a simple Web App Test.</h2>
-<h4>This is version 34.</h4>
+<h4>This is version 35.</h4>
 </body>
 </html>
