@@ -7,7 +7,7 @@
 </head>
 <body>
 <h1>Hello World!</h1>
-<h2>This is a simple Web App Test. </h2>
+<h2>This is a simple Web App Test. For the demo today.</h2>
 <h4>This is version 43.</h4>
 </body>
 </html>
