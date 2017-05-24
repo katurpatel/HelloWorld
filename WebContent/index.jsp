@@ -11,7 +11,7 @@
   <script>
   $( function() {
     var availableTags = [
-      "ActionScript",
+      "ActionScrit",
       "AppleScript",
       "Asp",
       "BASIC",
